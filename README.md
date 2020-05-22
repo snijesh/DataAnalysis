@@ -26,11 +26,11 @@ GSM700333	DHT for 48h, biological rep1<br>
 GSM700334	DHT for 48h, biological rep2<br>
 
 
-The results can be downloaded from here [GSE28305](AR/GSE28305_annotated_normalized.xlsx)
+The results can be downloaded from here [GSE28305](AR/GSE28305_annotated_normalized.xlsx) #will not work now use onedrive
 
 ## 1.2 GSE28789
 
-(Link)[https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE28789]
+[Link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE28789)
 
 This is same data as above with chip-seq data. Hence skipped from analysis
 
@@ -39,7 +39,7 @@ This is same data as above with chip-seq data. Hence skipped from analysis
 
 ## 2.1 GSE97221
 
-(Link)[https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE97221]
+[Link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE97221)
 
 **Title**: Molecular changes in premenopausal estrogen receptor-positive primary breast cancer after oophorectomy<br>
 
@@ -146,7 +146,7 @@ diagnosis (A) as **D_A**<br>
 during mastectomy (C; 4 weeks) as **DM_C_4W**<br>
 ntra-operative at OvX (B; 2 weeks) as **IO_Ovx_B_2w**<br>
 
-The results can be downloaded here [GSE97221](PR/GSE97221_annotated_normalized.xlsx)
+The results can be downloaded here [GSE97221](PR/GSE97221_annotated_normalized.xlsx) ##will not work now use onedrive
 
 ## 2.2 GSE80620
 
@@ -220,7 +220,7 @@ GSM1503211	ZR751_P_rep1<br>
 GSM1503212	ZR751_MPA_rep4<br>
 GSM1503213	ZR751_P_rep4<br>
 
-The results can be downloaded from here [GSE61368](ER_PR_AR/GSE61368_quantile_normalized.xlsx)
+The results can be downloaded from here [GSE61368](ER_PR_AR/GSE61368_quantile_normalized.xlsx) #will not work now use onedrive
 
 ## 3.2 GSE99626
 
@@ -279,5 +279,5 @@ GSM935271	progesterone PROG replicate 4<br>
 
 
 ```python
-The results can be downloaded from here [GSE38132](GSE38132/GSE38132_normalized_quantile.xlsx)
+The results can be downloaded from here [GSE38132](GSE38132/GSE38132_normalized_quantile.xlsx) #will not work now use onedrive
 ```
