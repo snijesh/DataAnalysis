@@ -1,9 +1,6 @@
 ## Candidate Gene Identification from Gene Expression Data
 
 
-```python
-
-```
 
 <img src="image/methods2.jpg"> 
 
@@ -21,7 +18,7 @@ The microarray gene expression profile of disease of interest was taken from the
 ### 3. Data Normalization and Analysis
 1. Analysis of microarray gene expression data was carried out by using R/Bioconductor. <br>
 2. Normalization of the microarray dataset was performed using Robust Multiarray Average (RMA) algorithm <br>
-3. Statistically significant differentially expressed genes between normal and RA samples were computed by applying t-statistic.<br>
+3. Statistically significant differentially expressed genes between normal and disease samples were computed by applying t-statistic.<br>
 
 ### 4. Protein-Protein Interaction Map
 An experimentally validated protein–protein interaction map **(PPIM)** was constructed using data deposited in the Biomolecular Interaction Network Database (**BIND**), Biological General Repository for Interaction Datasets (**BioGRID**), The Molecular Interaction Database (**MINT**), Database of Interacting Proteins (**DIP**), Human Protein Reference Database (**HPRD**), and **IntAct** database
