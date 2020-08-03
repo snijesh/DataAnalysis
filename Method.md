@@ -5,7 +5,7 @@
 
 ```
 
-<img src="methods2.jpg"> 
+<img src="image/methods2.jpg"> 
 
 
 ```python
