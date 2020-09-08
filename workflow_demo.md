@@ -2078,3 +2078,172 @@ edge_semantic_pearson_map
 ```python
 edge_semantic_pearson_map.to_csv(r"F:\snijesh\OneDrive - St John's National Academy of Health Sciences\Re_analysis\SNJ_WorkingDirectory\GSE61368\dht_filtered\edge_semantic_pearson_map.txt", sep='\t', index=False)
 ```
+
+### Considering genes with High Differential Expression
+
+```python
+degs1_4 = pd.read_excel(r"F:\snijesh\OneDrive - St John's National Academy of Health Sciences\Re_analysis\SNJ_WorkingDirectory\GSE61368\dht_filtered\fc_1.4_above_dht.xlsx")
+degs1_4
+```
+
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Entrez_Gene_ID</th>
+      <th>Symbol</th>
+      <th>PASS</th>
+      <th>DHT_FC_AB</th>
+      <th>Coef.DHTx</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>10720</td>
+      <td>UGT2B11</td>
+      <td>1</td>
+      <td>22.670194</td>
+      <td>4.502725</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>7364</td>
+      <td>UGT2B7</td>
+      <td>1</td>
+      <td>21.933067</td>
+      <td>4.455036</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>54490</td>
+      <td>UGT2B28</td>
+      <td>1</td>
+      <td>16.227830</td>
+      <td>4.020398</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>79098</td>
+      <td>C1orf116</td>
+      <td>1</td>
+      <td>7.163982</td>
+      <td>2.840762</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>9073</td>
+      <td>CLDN8</td>
+      <td>1</td>
+      <td>4.910970</td>
+      <td>2.296008</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>365</td>
+      <td>55066</td>
+      <td>PDPR</td>
+      <td>1</td>
+      <td>1.402614</td>
+      <td>-0.488118</td>
+    </tr>
+    <tr>
+      <td>366</td>
+      <td>226</td>
+      <td>ALDOA</td>
+      <td>1</td>
+      <td>1.402108</td>
+      <td>0.487597</td>
+    </tr>
+    <tr>
+      <td>367</td>
+      <td>134430</td>
+      <td>WDR36</td>
+      <td>1</td>
+      <td>1.400481</td>
+      <td>-0.485922</td>
+    </tr>
+    <tr>
+      <td>368</td>
+      <td>652455</td>
+      <td>LOC652455</td>
+      <td>1</td>
+      <td>1.400219</td>
+      <td>-0.485653</td>
+    </tr>
+    <tr>
+      <td>369</td>
+      <td>1316</td>
+      <td>KLF6</td>
+      <td>1</td>
+      <td>1.400204</td>
+      <td>0.485637</td>
+    </tr>
+  </tbody>
+</table>
+<p>370 rows × 5 columns</p>
+</div>
+
+
+
+```python
+degs1_4['DHT_FC_AB'].quantile([0.33, 0.66])
+```
+
+
+
+
+    0.33    1.466840
+    0.66    1.606083
+    Name: DHT_FC_AB, dtype: float64
+
+
+
+
+```python
+len(degs1_4[degs1_4['DHT_FC_AB']< 1.466]) #Low Confidence
+```
+
+
+
+
+    122
+
+
+
+
+```python
+len(degs1_4[(degs1_4['DHT_FC_AB']>=1.466) & (degs1_4['DHT_FC_AB']<1.606)]) #Medium Confidence
+```
+
+
+
+
+    122
+
+
+
+
+```python
+len(degs1_4[degs1_4['DHT_FC_AB'] >=1.606]) #Higher Confidence
+```
+
+
+
+
+    126
+
+
+
+
+```python
+
+```
